@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0388fc;
+}
+
+
+#boredForm {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #39c8db;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+    justify-content: space-around;    
+}
+
+.description {
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#factResults {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #0388fc;
+    
+}
+
+.factObject {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #daf0a8;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid black;
+    background-color: #0388fc;
+}
+
+.numberInput, .typeInput {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.formLabel, #typeSubmit, #activityNum {
+    width: 100%;
+    font-weight: bold;
+}
+
+#typeSubmit, #activityNum {
+    font-weight: normal;
+}
+
+.formHeader {
+    text-align: center;
+}
+
+@media only screen and (max-width: 420px) {
+    .factObject {
+        width: 45%;
+    }
+    .formHeader {
+        display: flex;
+        justify-content: center;
+        order: -2;
+        width: 100%;
+        
+    }
+    
+    .description {
+        display: flex;
+        order: -1;
+    }
+    
+    #boredForm {
+        justify-content: space-between;
+    }
+    .numberInput, .typeInput {
+        width: 100%;
+    }
+    #submit {
+        width: 100%;
+    }   
+}
+
+@media only screen and (min-width: 421px) and (max-width: 900px) {
+    .factObject {
+        width: 30%;
+    }
+    .formHeader {
+        width: 100%;
+    }
+    #boredForm {
+        justify-content: space-around;
+    }
+    .numberInput, .typeInput {
+        width: 45%;
+    }
+    #submit {
+        width: 60%;
+        height: 40px;
+        margin-top: 5px;
+    }
+    
+}
+
+@media only screen and (min-width: 901px) {
+    .factObject {
+        width: 18%;
+    }
+    
+    .formHeader {
+        width: 50%;
+    }
+    .numberInput, .typeInput {
+        width: 25%;
+    }
+    #submit {
+        width: 60%;
+        height: 40px;
+        margin-top: 5px;
+    }
+    
+}

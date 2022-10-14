@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Creative Project 2</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+        <form id = "boredForm">
+            <h1 class = "formHeader">Activity Ideas!</h1>
+            <div class="numberInput">
+                <label class = "formLabel">Generate new random facts!</label>
+                <input id="activityNum" type="number"></input><br/>
+            </div>
+            <div class="typeInput">
+                <label class = "formLabel" >Type</label>
+                <select name = "type" id="typeSubmit">
+                    <option value = "any">Anything!</option>
+                    <option value = "recreational">Recreational</option>
+                    <option value = "educational">Educational</option>
+                    <option value = "social">Social</option>
+                    <option value = "diy">DIY</option>
+                    <option value = "charity">Charity</option>
+                    <option value = "cooking">Cooking</option>
+                    <option value = "relaxation">Relaxation</option>                    
+                    <option value = "music">Music</option>                
+                    <option value = "busywork">Busywork</option>               
+                </select>   
+            </div>
+            <div class="description">
+                This site uses the BoredAPI to find activities to do! Enter the 
+                number of activities you want to generate and the category, then click the button!
+                Note that since they are randomly generated, the same activities may show 
+                up more than once.
+            </div>
+            <input id="submit" type="submit" value="Get me some things to do!"></input>
+        </form>
+    
+        <div id="factResults"></div>
+
+        
+
+
+    <div class="footer">
+        Source code here: <a href="https://github.com/BYU-CS-260/lab2-javascript-JustJoshingYa42">https://github.com/BYU-CS-260/lab2-javascript-JustJoshingYa42</a>    
+    </div>
+    
+    <script text="type/javascript" src="factScript.js">
+    </script>
+
+  </body>
+</html>
